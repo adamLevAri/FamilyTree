@@ -16,8 +16,6 @@ int main() {
 	T.find("adam", "posher");
 	T.display(T.start);
 	
-    try
-    {
 	badkan::TestCase testcase;
 	testcase.setname("My tests")
 		.CHECK_OUTPUT(T.findRelation("posher", 'g'), "adam")
@@ -26,11 +24,6 @@ int main() {
 		.CHECK_OUTPUT(T.find("adam", "hava"), "husband")
 		.CHECK_OUTPUT(T.find("adam", "posher"), "grandfather")
 		.print();
-    }
-    catch (int e)
-  {
-    cout << "An exception occurred. Exception Nr. " << e << '\n';
-  }
 
 	return 0;
 }
